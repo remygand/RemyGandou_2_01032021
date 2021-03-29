@@ -1,7 +1,9 @@
+/*global*/
+
 body
 {
-    font-family:'Raleway',sans-serif;
     color: black;
+    font-family:'Raleway',sans-serif;
     margin: 0;
 }
 
@@ -10,6 +12,12 @@ ul
     list-style: none;
     margin: 0;
 }
+
+strong
+{
+    font-weight: bold;
+}
+
 /*header*/
 
 nav
@@ -20,7 +28,7 @@ nav
 
 nav div
 {
-    padding: 50px;
+    padding: 51px 51px 41px 51px;
 }
 
 nav ul
@@ -30,54 +38,205 @@ nav ul
 
 .link
 {
-    padding: 56px 11px 44px 11px;
+    padding: 56px 11px 34px 11px;
+}
+
+a[href*="reservia"]
+{
+    border: 2px white solid;
+    color: black;
+    padding: 54px 22px 32px 22px;
+    text-decoration: none;
+}
+
+a[href*="reservia"]:hover
+{
+    border-top-color: #0065FC;
+    color: #0065FC;
 }
 
 #sign_up
 {
     color: #0065FC;
-    margin: 56px 75px 44px 33px;
+    margin: 56px 75px 34px 33px;
 }
 
-a[href*="reservia"]
+/*research*/
+
+h1
 {
-    color: black;
-    text-decoration: none;
-    padding: 54px 22px 42px 22px;
-    border: 2px white solid;
+    margin: 0 100px 6px 0;
 }
 
-a[href*="reservia"]:hover
+#research
 {
-    color: #0065FC;
-    border-top-color: #0065FC;
+    padding: 0 50px 0 50px;
 }
 
-/**/
+#research p
+{
+    margin: 0;
+}
+
+#search_bar
+{
+    display: flex;
+    margin: 20px 0 30px 0;
+}
+
+#search_bar i
+{
+    align-items: center;
+    background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    font-size: 17px;
+    height: 19px;
+    justify-content: center;
+    padding: 12px;
+    width: 19px;
+}
+
+#search_bar strong
+{
+    background-color: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0 12px 12px 0;
+    color: white;
+    padding: 12px;
+}
+
+input
+{
+    border: 1px #F2F2F2 solid; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px;
+}
 
 #filters
 {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-.filter:hover
+#filters li:first-child
+{
+    border: 2px white solid;
+    border-left: none;
+    margin: 10px 20px 10px 0px;
+}
+
+#filters li:nth-child(5)
+{
+    width: max-content;
+}
+
+.filter
+{
+    display: flex;
+    margin-left: 40px;
+}
+
+.filter strong
+{
+    border: 2px #D9D9D9 solid;
+    border-radius: 0 50px 50px 0;
+    padding: 10px 20px 10px 25px;
+}
+
+.filter strong:hover
 {
     color: #0065FC;
-    border: 1px #0065FC solid; 
 }
 
-#homes
+.filter i
+{
+    align-items: center;
+    background-color: #DEEBFF;
+    border: 2px #DEEBFF solid;
+    border-radius: 50px;
+    color: #0065FC;
+    display: flex;
+    font-size: 17px;
+    height: 19px;
+    justify-content: center;
+    left: 8px;
+    padding: 10px;
+    position: relative;
+    width: 19px;
+}
+
+#research :nth-child(5)
+{
+    display: flex;
+    align-items: center;
+}
+
+i[class="fas fa-info"]
+{
+    align-items: center;
+    border: 1px #D9D9D9 solid;
+    border-radius: 50px;
+    color: #0065FC;
+    display: flex;
+    font-size: 13px;
+    height: 10px;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 5px;
+    width: 10px;
+}
+
+/*hostings*/
+
+#result
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 35px 50px 50px 50px;
+}
+
+#hostings
 {
     background: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-between;
+    padding: 35px 40px 40px 40px;
+    width: 880px;
+}
+
+main img
+{
+    height: auto;
+    width: 235px;
+}
+
+#list_hostings div
+{
+    background: white;
+    border-radius: 20px;
+    border: 5px white solid;
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 235px;
 }
 
 aside
 {
     background: #F2F2F2;
-}
-
-strong
-{
-    font-weight: bold;
+    border-radius: 20px;
+    padding: 35px 40px 40px 40px;
 }
