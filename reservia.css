@@ -1,5 +1,10 @@
 /*global*/
 
+html
+{
+    font-size: 1px;
+}
+
 body
 {
     color: black;
@@ -7,9 +12,20 @@ body
     margin: 0;
 }
 
-ul
+#main_wrapper
 {
-    list-style: none;
+    height: 1884rem;
+    width: 1440rem;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+p
+{
     margin: 0;
 }
 
@@ -18,118 +34,132 @@ strong
     font-weight: bold;
 }
 
-p
+ul
 {
+    list-style: none;
     margin: 0;
+    padding-inline-start: 0;
 }
 
 /*header*/
 
-nav
+header nav
 {
     display: flex;
     justify-content: space-between;
 }
 
-nav div
+header img
 {
-    padding: 50px 50px 40px 50px;
+    height: auto;
+    margin: 44rem 0rem 38rem 53rem;
+    width: 95rem;
 }
 
-nav ul
+header ul
 {
     display: flex;
+    font-size: 14rem;
 }
 
-.link
+header li:nth-child(1), header li:nth-child(2)
 {
-    padding: 56px 11px 34px 11px;
+    padding: 50rem 0 0 0;
 }
 
-a[href*="reservia"]
+header li:nth-child(3)
 {
-    border: 2px white solid;
-    color: black;
-    padding: 54px 22px 32px 22px;
-    text-decoration: none;
+    color: #0065FC;
+    padding: 50rem 70rem 0 30rem;
 }
 
-a[href*="reservia"]:hover
+header a
+{
+    border: 1rem white solid;
+    margin: 0 12rem 0 13rem;
+    padding: 50rem 20rem 0 20rem;
+}
+
+header a:hover
 {
     border-top-color: #0065FC;
     color: #0065FC;
 }
 
-#sign_up
-{
-    color: #0065FC;
-    margin: 56px 75px 34px 33px;
-}
-
 /*research*/
-
-h1
-{
-    margin: 0 100px 6px 0;
-}
 
 #research
 {
-    padding: 0 50px 0 50px;
+    padding: 0 53rem 38rem 53rem;
 }
 
-#search_bar
+#research h1
+{
+    font-size: 22rem;
+    margin: 0 0 8rem 1rem;
+}
+
+#research h1 + p
+{
+    font-size: 16rem;
+    margin: 0 0 19rem 2rem;
+}
+
+#research p + div
 {
     display: flex;
-    margin: 20px 0 30px 0;
+    margin-bottom: 31rem;
 }
 
-#search_bar i
+i[class="fas fa-map-marker-alt"]
 {
     align-items: center;
     background-color: #F2F2F2;
-    border: 1px #F2F2F2 solid;
-    border-radius: 12px 0 0 12px;
+    border: 1rem #F2F2F2 solid;
+    border-radius: 14rem 0 0 14rem;
     display: flex;
-    font-size: 17px;
-    height: 19px;
+    font-size: 18rem;
+    height: 21rem;
     justify-content: center;
-    padding: 12px;
-    width: 19px;
-}
-
-#search_bar strong
-{
-    background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 0 12px 12px 0;
-    color: white;
-    padding: 12px;
+    padding: 14rem;
+    width: 21rem;
 }
 
 input
 {
-    border: 1px #F2F2F2 solid; 
+    border: 1rem #F2F2F2 solid; 
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+    font-size: 18rem;
     font-weight: bold;
-    padding: 12px;
+    padding: 14rem;
+}
+
+#research div form + strong
+{
+    background-color: #0065FC;
+    border: 1rem #0065FC solid;
+    border-radius: 0 14rem 14rem 0;
+    color: white;
+    font-size: 18rem;
+    padding: 14rem;
 }
 
 #filters
 {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-left: 0;
+    font-size: 18rem;
+    justify-content: space-between;
+    margin: 0 0 37rem 9rem;
     padding-left: 0;
+    width: 940rem;
 }
 
 #filters li:first-child
 {
-    border: 2px white solid;
+    border: 2rem white solid;
     border-left: none;
-    margin: 10px 20px 10px 0px;
+    margin: 12rem 20rem 12rem 0rem;
 }
 
 #filters li:nth-child(5)
@@ -140,14 +170,30 @@ input
 .filter
 {
     display: flex;
-    margin-left: 40px;
+}
+
+.filter i
+{
+    align-items: center;
+    background-color: #DEEBFF;
+    border: 2rem #DEEBFF solid;
+    border-radius: 50rem;
+    color: #0065FC;
+    display: flex;
+    font-size: 18rem;
+    height: 21rem;
+    justify-content: center;
+    left: 8rem;
+    padding: 12rem;
+    position: relative;
+    width: 21rem;
 }
 
 .filter strong
 {
-    border: 2px #D9D9D9 solid;
-    border-radius: 0 50px 50px 0;
-    padding: 10px 20px 10px 25px;
+    border: 2rem #D9D9D9 solid;
+    border-radius: 0 50rem 50rem 0;
+    padding: 12rem 20rem 12rem 32rem;
 }
 
 .filter strong:hover
@@ -155,107 +201,142 @@ input
     color: #0065FC;
 }
 
-.filter i
-{
-    align-items: center;
-    background-color: #DEEBFF;
-    border: 2px #DEEBFF solid;
-    border-radius: 50px;
-    color: #0065FC;
-    display: flex;
-    font-size: 17px;
-    height: 19px;
-    justify-content: center;
-    left: 8px;
-    padding: 10px;
-    position: relative;
-    width: 19px;
-}
-
 #research :nth-child(5)
 {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-size: 16rem;
 }
 
 i[class="fas fa-info"]
 {
     align-items: center;
-    border: 1px #D9D9D9 solid;
-    border-radius: 50px;
+    border: 1rem #D9D9D9 solid;
+    border-radius: 50rem;
     color: #0065FC;
     display: flex;
-    font-size: 13px;
-    height: 10px;
+    font-size: 12rem;
+    height: 10rem;
     justify-content: center;
-    margin-right: 10px;
-    padding: 5px;
-    width: 10px;
+    margin: 0 10rem 0 5rem;
+    padding: 5rem;
+    width: 10rem;
 }
 
 /*hostings*/
 
-#result
-{
-    /*align-content: space-between;*/
-    display: flex;
-    /*flex-wrap: wrap;*/
-    justify-content: space-between;
-    margin: 35px 50px 50px 50px;
-    width: 1340px;
-}
-
 #hostings
-{
-    background: #F2F2F2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-#hostings a
-{
-    background: white;
-    border-radius: 20px;
-    border: 5px white solid;
-    box-shadow: 0px 0px 20px #D9D9D9;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    height: 190px;
-    justify-content: flex-end;
-    overflow: hidden;
-    text-decoration: none;
-    width: 235px;
-}
-
-#hostings div
 {
     align-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: 430px;
     justify-content: space-between;
-    margin: 0 0 35px 0;
-    width: 795px;
+    padding: 0 50rem 60rem 50rem;
 }
 
-#hostings h2
+#hostings section
 {
-    font-size: 22px;
-    margin: 0 0 20px 0;
+    background: #F2F2F2;
+    border-radius: 20rem;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 42rem 40rem 46rem 40rem;
 }
 
-#hostings h3
+#hostings section h2
 {
-    background-color: white;
-    font-size: 16px;
-    margin: 0;
-    padding: 9px 0 2px 14px;
-    z-index: 2;
+    font-size: 22rem;
+    margin: 0 0 23rem 0;
+}
+
+#hostings section h2 + div
+{
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    height: 428rem;
+    justify-content: space-between;
+    margin: 0 0 40rem 0;
+    width: 795rem;
+}
+
+#hostings section a
+{
+    background: white;
+    border: 5rem white solid;
+    border-radius: 20rem;
+    box-shadow: 0 0 20rem #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    height: 189rem;
+    overflow: hidden;
+    width: 235rem;
+}
+
+#hostings section a div
+{
+    height: 114rem;
+    margin-bottom: 9rem;
+    overflow: hidden;
+    width: 235rem;
+}
+
+#hostings section img
+{
+    height: auto;
+    width: 244rem;
+    position: relative;
+    right: 4rem;
+}
+
+img[alt="Auberge la Cannebière"], img[alt="Hôtel Les mouettes"]
+{
+    bottom: 24rem;
+}
+
+img[alt="Hôtel du port"]
+{
+    bottom: 25rem;
+}
+
+img[alt="Hôtel de la mer"]
+{
+    bottom: 56rem;
+}
+
+img[alt="Auberge Le Panier"]
+{
+    bottom: 11rem;
+}
+
+img[alt="Hôtel chez Amina"]
+{
+    bottom: 126rem;
+}
+
+#hostings section h3
+{
+    font-size: 16rem;
+    margin: 0 0 5rem 11rem;
+}
+
+#hostings section p
+{
+    font-size: 14rem;
+    margin: 0 0 8rem 11rem;
+}
+
+#hostings section ul
+{
+    display: flex;
+    margin: 0 0 6rem 11rem;
+}
+
+#hostings section i
+{
+    color: #0065FC;
+    font-size: 12rem;
 }
 
 #hostings .grey i
@@ -263,62 +344,9 @@ i[class="fas fa-info"]
     color: #D9D9D9;
 }
 
-#hostings i
+#hostings section div + strong
 {
-    color: #0065FC;
-    font-size: 12px;
-}
-
-#hostings img
-{
-    position: relative;
-    height: auto;
-    right: 4px;
-    width: 244px;
-    z-index: 1;
-}
-
-#hostings p
-{
-    background-color: white;
-    font-size: 14px;
-    margin: 0;
-    padding: 3px 0 2px 14px;
-    z-index: 2;
-}
-
-#hostings ul
-{
-    background-color: white;
-    display: flex;
-    margin: 0;
-    padding: 3px 0 6px 14px;
-    z-index: 2;
-}
-
-img[alt="Auberge la Cannebière"], img[alt="Hôtel Les mouettes"]
-{
-    top: 24px;
-}
-
-img[alt="Hôtel du port"]
-{
-    top: 25px;
-}
-
-img[alt="Hôtel de la mer"]
-{
-    top: 56px;
-}
-
-img[alt="Auberge Le Panier"]
-{
-    top: 11px;
-}
-
-img[alt="Hôtel chez Amina"]
-{
-    top: 126px;
+    font-size: 18rem;
 }
 
 /*aside*/
@@ -326,126 +354,131 @@ img[alt="Hôtel chez Amina"]
 aside
 {
     background: #F2F2F2;
-    border-radius: 20px;
+    border-radius: 20rem;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 41rem 37rem 34rem 37rem;
+}
+
+aside > div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26rem;
+}
+
+aside h2
+{
+    font-size: 22rem;
+    margin: 0;
+}
+
+aside h2 + i
+{
+    font-size: 22rem;
+    position: relative;
+    top: 2rem;
+}
+
+aside > div + div
+{
+    display: flex;
+    flex-direction: column;
+    height: 498rem;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
 
 aside a
 {
     background: white;
-    border: 5px white solid;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px #D9D9D9;
-    color: black;
+    border: 5rem white solid;
+    border-radius: 20rem;
+    box-shadow: 0 0 20rem #D9D9D9;
     display: flex;
-    height: 135px;
-    justify-content: flex-end;
+    height: 134rem;
     overflow: hidden;
-    text-decoration: none;
-    width: 335px;
+    width: 333rem;
 }
 
-aside a div
+aside a > div
+{
+    width: 127rem;
+    height: 134rem;
+    overflow: hidden;
+}
+
+aside a > div + div
 {
     display: flex;
     flex-direction: column;
+    width: 206rem;
+    height: 134rem;
+}
+
+img[alt="Hôtel Le soleil du matin"]
+{
+    bottom: 6rem;
+    height: auto;
     position: relative;
-    text-decoration: none;
-    width: 208px;
+    right: 44rem;
+    width: 216rem;
 }
 
-aside div:first-child
+img[alt*="Au coeur de l'eau"]
 {
-    display: flex;
-    font-size: 22px;
-    justify-content: space-between;
+    bottom: 4rem;
+    height: auto;
+    position: relative;
+    right: 33rem;
+    width: 188rem;
 }
 
-aside div:first-child i
-{
-    font-size: 22px;
-    top: 2px;
-} 
 
-aside h2
+img[alt="Hôtel Tout bleu et Blanc"]
 {
-    font-size: 22px;
-    margin: 0 0 20px 0;
+    bottom: 36rem;
+    height: auto;
+    position: relative;
+    right: 6rem;
+    width: 138rem;
 }
 
 aside h3
 {
-    font-size: 16px;
-    margin: 0;
-    padding: 12px 10px 2px 20px; 
-}
-
-aside img
-{
-    height: auto;
-    width: 127px;
-}
-
-aside .grey i
-{
-    color: #D9D9D9;
-}
-
-aside li i
-{
-    color: #0065FC;
-    font-size: 12px;
+    font-size: 16rem;
+    margin: 11rem 10rem 7rem 20rem;
 }
 
 aside p
 {
-    font-size: 14px;
-    margin: 0;
-    padding: 2px 10px 2px 20px;
+    font-size: 14rem;
+    margin: 0 10rem 41rem 20rem;
 }
 
 aside ul
 {
     display: flex;
-    margin: 0;
-    padding: 2px 10px 2px 20px;
+    margin: 0 10rem 2rem 20rem;
+}
+
+aside li i
+{
+    color: #0065FC;
+    font-size: 11rem;
 }
 
 /*activities*/
 
 #activities
 {
-    margin: 20px 50px 50px 50px;
-    width: 1340px;
-}
-
-#activities a
-{
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px #D9D9D9;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-    text-decoration: none;
-    width: 302px;
-}
-
-#activities div div
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 0 50rem 60rem 50rem;
 }
 
 #activities h2
 {
-    font-size: 22px;
-    margin: 0 0 20px 0;
+    font-size: 22rem;
+    margin: 0 0 22rem 0;
 }
 
 #activities h2 + div
@@ -454,34 +487,133 @@ aside ul
     justify-content: space-between;
 }
 
+#activities a
+{
+    background: white;
+    border-radius: 20rem;
+    box-shadow: 0 0 20rem #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#activities div > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #activities strong
 {
-    padding: 20px;
+    font-size: 17rem;
+    margin: 19rem 20rem 0 20rem;
 }
 
 #Vieux_Port, #Parc_National
 {
-    height: 445px;
+    height: 446rem;
+}
+#Vieux_Port div, #Parc_National div
+{
+    height: 390rem;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#Vieux_Port img
+{
+    width: 670rem;
+    height: auto;
+    position: relative;
+    right: 186rem;
+}
+
+#Parc_National img
+{
+    width: 660rem;
+    height: auto;
+    position: relative;
+    right: 180rem;
 }
 
 #Fort_de_Pomègues
 {
-    height: 236px;
+    height: 236rem;
+}
+
+#Fort_de_Pomègues div
+{
+    height: 180rem;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#Fort_de_Pomègues img
+{
+    width: 302rem;
+    height: auto;
+    position: relative;
+    bottom: 110rem;
 }
 
 #Îles_du_Frioul
 {
-    height: 165px;
+    height: 166rem;
+}
+
+#Îles_du_Frioul div
+{
+    height: 110rem;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#Îles_du_Frioul img
+{
+    height: auto;
+    width: 302rem;
+    position: relative;
+    bottom: 18rem;
 }
 
 #Notre_Dame
 {
-    height: 195px;
+    height: 196rem;
+}
+
+#Notre_Dame div
+{
+    height: 140rem;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#Notre_Dame img
+{
+    height: auto;
+    width: 302rem;
 }
 
 #Parc_Longchamp
 {
-    height: 206px;
+    height: 206rem;
+}
+
+#Parc_Longchamp div
+{
+    height: 150rem;
+    overflow: hidden;
+    width: 302rem;
+}
+
+#Parc_Longchamp img
+{
+    height: auto;
+    width: 302rem;
+    position: relative;
+    bottom: 12rem;
 }
 
 /*footer*/
@@ -490,31 +622,27 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    padding: 50px 50px 30px 50px;
-    width: 1340px;
+    padding: 46rem 50rem 38rem 50rem;
 }
 
 footer h3
 {
-    margin: 0 0 20px 0;
+    font-size: 18rem;
+    margin: 0 0 20rem 0;
 }
 
 footer li
 {
-    margin: 0 0 20px 0;
+    font-size: 16rem;
+    margin: 0 0 12rem 0;
 }
 
 footer section:nth-child(2)
 {
-    padding: 0 0 0 228px;
+    padding: 0 0 0 228rem;
 }
 
 footer section:nth-child(3)
 {
-    padding: 0 0 0 292px;
-}
-
-footer ul
-{
-    padding: 0;
+    padding: 0 0 0 292rem;
 }
