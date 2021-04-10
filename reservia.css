@@ -1,165 +1,190 @@
-/*global*/
+/* body */
 
-html
-{
-    font-size: 1px;
-}
-
-body
-{
+body {
     color: black;
     font-family:'Raleway',sans-serif;
+    font-size: 1rem;
     margin: 0;
 }
 
-#main_wrapper
-{
-    height: 1884rem;
-    width: 1440rem;
+#main_wrapper {
+    width: 100%;
 }
 
-a
-{
+a {
     color: black;
     text-decoration: none;
 }
 
-p
-{
+p {
     margin: 0;
 }
 
-strong
-{
-    font-weight: bold;
-}
-
-ul
-{
+ul {
     list-style: none;
     margin: 0;
     padding-inline-start: 0;
 }
 
-/*header*/
+/* header */
 
-header nav
-{
+header nav {
     display: flex;
-    justify-content: space-between;
 }
 
-header img
-{
+@media only screen and (max-width: 767px) {
+    header nav {
+        flex-wrap: wrap;
+    }
+
+    header nav :nth-child(1) {
+        padding: 24px 0 28px 5.6%;
+    }
+
+    header nav :nth-child(2) {
+        order: 3;
+        padding-left: 10.4%;
+        text-align: left;
+        width: 39.6%;
+    }
+
+    header nav :nth-child(3) {
+        order: 4;
+        padding-right: 17.6%;
+        text-align: right;
+        width: 32.4%;
+    }
+
+    header nav :nth-child(4) {
+        margin-left: auto;
+        order: 2;
+        padding: 40px 5.6% 0 0;
+        text-align: right;
+        width: 44.4%;
+    }
+
+    header a {
+        border-bottom: 3px #F2F2F2 solid;
+        padding-bottom: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header nav :nth-child(1){
+        padding: 44px 0 37px 3.681%;
+    }
+    
+    header nav :nth-child(2) {
+        margin-left: auto;
+    }
+
+    header nav :nth-child(4) {
+        padding: 48px 5.347% 0 3.194%;
+    }
+
+    header a {
+        border-top: 2px white solid;
+        margin-left: 1.181%;
+        padding: 46px 1.528% 0 1.944%;
+    }
+}
+
+header img {
     height: auto;
-    margin: 44rem 0rem 38rem 53rem;
-    width: 95rem;
+    width: 6rem;
 }
 
-header ul
-{
+header a:hover, header strong {
+    border-color: #0065FC;
+    color: #0065FC;
+}
+
+/* main */
+
+main a {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #D9D9D9;
+    color: black;
     display: flex;
-    font-size: 14rem;
+    overflow: hidden;
+    text-decoration: none;
 }
 
-header li:nth-child(1), header li:nth-child(2)
-{
-    padding: 50rem 0 0 0;
-}
-
-header li:nth-child(3)
-{
-    color: #0065FC;
-    padding: 50rem 70rem 0 30rem;
-}
-
-header a
-{
-    border: 1rem white solid;
-    margin: 0 12rem 0 13rem;
-    padding: 50rem 20rem 0 20rem;
-}
-
-header a:hover
-{
-    border-top-color: #0065FC;
-    color: #0065FC;
-}
-
-/*research*/
+/* research */
 
 #research
 {
-    padding: 0 53rem 38rem 53rem;
+    padding: 0 53px 38px 53px;
 }
 
 #research h1
 {
-    font-size: 22rem;
-    margin: 0 0 8rem 1rem;
+    font-size: 22px;
+    margin: 0 0 8px 1px;
 }
 
 #research h1 + p
 {
-    font-size: 16rem;
-    margin: 0 0 19rem 2rem;
+    font-size: 16px;
+    margin: 0 0 19px 2px;
 }
 
 #research p + div
 {
     display: flex;
-    margin-bottom: 31rem;
+    margin-bottom: 31px;
 }
 
 i[class="fas fa-map-marker-alt"]
 {
     align-items: center;
     background-color: #F2F2F2;
-    border: 1rem #F2F2F2 solid;
-    border-radius: 14rem 0 0 14rem;
+    border: 1px #F2F2F2 solid;
+    border-radius: 14px 0 0 14px;
     display: flex;
-    font-size: 18rem;
-    height: 21rem;
+    font-size: 18px;
+    height: 21px;
     justify-content: center;
-    padding: 14rem;
-    width: 21rem;
+    padding: 14px;
+    width: 21px;
 }
 
 input
 {
-    border: 1rem #F2F2F2 solid; 
+    border : 1px #F2F2F2 solid; 
     font-family: 'Raleway', sans-serif;
-    font-size: 18rem;
+    font-size: 18px;
     font-weight: bold;
-    padding: 14rem;
+    padding: 14px;
 }
 
 #research div form + strong
 {
     background-color: #0065FC;
-    border: 1rem #0065FC solid;
-    border-radius: 0 14rem 14rem 0;
+    border: 1px #0065FC solid;
+    border-radius: 0 14px 14px 0;
     color: white;
-    font-size: 18rem;
-    padding: 14rem;
+    font-size: 18px;
+    padding: 14px;
 }
 
 #filters
 {
     display: flex;
     flex-wrap: wrap;
-    font-size: 18rem;
+    font-size: 18px;
     justify-content: space-between;
-    margin: 0 0 37rem 9rem;
+    margin: 0 0 37px 9px;
     padding-left: 0;
-    width: 940rem;
+    width: 940px;
 }
 
 #filters li:first-child
 {
-    border: 2rem white solid;
+    border: 2px white solid;
     border-left: none;
-    margin: 12rem 20rem 12rem 0rem;
+    margin: 12px 20px 12px 0px;
 }
 
 #filters li:nth-child(5)
@@ -176,24 +201,24 @@ input
 {
     align-items: center;
     background-color: #DEEBFF;
-    border: 2rem #DEEBFF solid;
-    border-radius: 50rem;
+    border: 2px #DEEBFF solid;
+    border-radius: 50px;
     color: #0065FC;
     display: flex;
-    font-size: 18rem;
-    height: 21rem;
+    font-size: 18px;
+    height: 21px;
     justify-content: center;
-    left: 8rem;
-    padding: 12rem;
+    left: 8px;
+    padding: 12px;
     position: relative;
-    width: 21rem;
+    width: 21px;
 }
 
 .filter strong
 {
-    border: 2rem #D9D9D9 solid;
-    border-radius: 0 50rem 50rem 0;
-    padding: 12rem 20rem 12rem 32rem;
+    border: 2px #D9D9D9 solid;
+    border-radius: 0 50px 50px 0;
+    padding: 12px 20px 12px 32px;
 }
 
 .filter strong:hover
@@ -205,22 +230,22 @@ input
 {
     align-items: center;
     display: flex;
-    font-size: 16rem;
+    font-size: 16px;
 }
 
 i[class="fas fa-info"]
 {
     align-items: center;
-    border: 1rem #D9D9D9 solid;
-    border-radius: 50rem;
+    border: 1px #D9D9D9 solid;
+    border-radius: 50px;
     color: #0065FC;
     display: flex;
-    font-size: 12rem;
-    height: 10rem;
+    font-size: 12px;
+    height: 10px;
     justify-content: center;
-    margin: 0 10rem 0 5rem;
-    padding: 5rem;
-    width: 10rem;
+    margin: 0 10px 0 5px;
+    padding: 5px;
+    width: 10px;
 }
 
 /*hostings*/
@@ -231,23 +256,23 @@ i[class="fas fa-info"]
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 50rem 60rem 50rem;
+    padding: 0 50px 60px 50px;
 }
 
 #hostings section
 {
     background: #F2F2F2;
-    border-radius: 20rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     height: max-content;
-    padding: 42rem 40rem 46rem 40rem;
+    padding: 42px 40px 46px 40px;
 }
 
 #hostings section h2
 {
-    font-size: 22rem;
-    margin: 0 0 23rem 0;
+    font-size: 22px;
+    margin: 0 0 23px 0;
 }
 
 #hostings section h2 + div
@@ -255,88 +280,83 @@ i[class="fas fa-info"]
     align-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    height: 428rem;
+    height: 428px;
     justify-content: space-between;
-    margin: 0 0 40rem 0;
-    width: 795rem;
+    margin: 0 0 40px 0;
+    width: 795px;
 }
 
 #hostings section a
 {
-    background: white;
-    border: 5rem white solid;
-    border-radius: 20rem;
-    box-shadow: 0 0 20rem #D9D9D9;
-    display: flex;
+    border: 5px white solid;
     flex-direction: column;
-    height: 189rem;
-    overflow: hidden;
-    width: 235rem;
+    height: 189px;
+    width: 235px;
 }
 
 #hostings section a div
 {
-    height: 114rem;
-    margin-bottom: 9rem;
+    height: 114px;
+    margin-bottom: 9px;
     overflow: hidden;
-    width: 235rem;
+    width: 235px;
 }
 
 #hostings section img
 {
     height: auto;
-    width: 244rem;
+    width: 244px;
     position: relative;
-    right: 4rem;
+    right: 4px;
 }
 
 img[alt="Auberge la Cannebière"], img[alt="Hôtel Les mouettes"]
 {
-    bottom: 24rem;
+    bottom: 24px;
 }
 
 img[alt="Hôtel du port"]
 {
-    bottom: 25rem;
+    bottom: 25px;
 }
 
 img[alt="Hôtel de la mer"]
 {
-    bottom: 56rem;
+    bottom: 56px;
 }
 
 img[alt="Auberge Le Panier"]
 {
-    bottom: 11rem;
+    bottom: 11px;
 }
 
 img[alt="Hôtel chez Amina"]
 {
-    bottom: 126rem;
+    bottom: 126px;
 }
 
 #hostings section h3
 {
-    font-size: 16rem;
-    margin: 0 0 5rem 11rem;
+    font-size: 16px;
+    margin: 0 0 5px 11px;
 }
 
 #hostings section p
 {
-    font-size: 14rem;
-    margin: 0 0 8rem 11rem;
+    font-size: 14px;
+    margin: 0 0 8px 11px;
 }
 
 #hostings section ul
 {
     display: flex;
-    margin: 0 0 6rem 11rem;
+    margin: 0 0 6px 11px;
 }
 
 #hostings section i
 {
     color: #0065FC;
-    font-size: 12rem;
+    font-size: 12px;
 }
 
 #hostings .grey i
@@ -346,7 +366,7 @@ img[alt="Hôtel chez Amina"]
 
 #hostings section div + strong
 {
-    font-size: 18rem;
+    font-size: 18px;
 }
 
 /*aside*/
@@ -354,37 +374,37 @@ img[alt="Hôtel chez Amina"]
 aside
 {
     background: #F2F2F2;
-    border-radius: 20rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 41rem 37rem 34rem 37rem;
+    padding: 41px 37px 34px 37px;
 }
 
 aside > div
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26rem;
+    margin-bottom: 26px;
 }
 
 aside h2
 {
-    font-size: 22rem;
+    font-size: 22px;
     margin: 0;
 }
 
 aside h2 + i
 {
-    font-size: 22rem;
+    font-size: 22px;
     position: relative;
-    top: 2rem;
+    top: 2px;
 }
 
 aside > div + div
 {
     display: flex;
     flex-direction: column;
-    height: 498rem;
+    height: 498px;
     justify-content: space-between;
     margin-bottom: 0;
 }
@@ -392,19 +412,19 @@ aside > div + div
 aside a
 {
     background: white;
-    border: 5rem white solid;
-    border-radius: 20rem;
-    box-shadow: 0 0 20rem #D9D9D9;
+    border: 5px white solid;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #D9D9D9;
     display: flex;
-    height: 134rem;
+    height: 134px;
     overflow: hidden;
-    width: 333rem;
+    width: 333px;
 }
 
 aside a > div
 {
-    width: 127rem;
-    height: 134rem;
+    width: 127px;
+    height: 134px;
     overflow: hidden;
 }
 
@@ -412,73 +432,73 @@ aside a > div + div
 {
     display: flex;
     flex-direction: column;
-    width: 206rem;
-    height: 134rem;
+    width: 206px;
+    height: 134px;
 }
 
 img[alt="Hôtel Le soleil du matin"]
 {
-    bottom: 6rem;
+    bottom: 6px;
     height: auto;
     position: relative;
-    right: 44rem;
-    width: 216rem;
+    right: 44px;
+    width: 216px;
 }
 
 img[alt*="Au coeur de l'eau"]
 {
-    bottom: 4rem;
+    bottom: 4px;
     height: auto;
     position: relative;
-    right: 33rem;
-    width: 188rem;
+    right: 33px;
+    width: 188px;
 }
 
 
 img[alt="Hôtel Tout bleu et Blanc"]
 {
-    bottom: 36rem;
+    bottom: 36px;
     height: auto;
     position: relative;
-    right: 6rem;
-    width: 138rem;
+    right: 6px;
+    width: 138px;
 }
 
 aside h3
 {
-    font-size: 16rem;
-    margin: 11rem 10rem 7rem 20rem;
+    font-size: 16px;
+    margin: 11px 10px 7px 20px;
 }
 
 aside p
 {
-    font-size: 14rem;
-    margin: 0 10rem 41rem 20rem;
+    font-size: 14px;
+    margin: 0 10px 41px 20px;
 }
 
 aside ul
 {
     display: flex;
-    margin: 0 10rem 2rem 20rem;
+    margin: 0 10px 2px 20px;
 }
 
 aside li i
 {
     color: #0065FC;
-    font-size: 11rem;
+    font-size: 11px;
 }
 
 /*activities*/
 
 #activities
 {
-    padding: 0 50rem 60rem 50rem;
+    padding: 0 50px 60px 50px;
 }
 
 #activities h2
 {
-    font-size: 22rem;
-    margin: 0 0 22rem 0;
+    font-size: 22px;
+    margin: 0 0 22px 0;
 }
 
 #activities h2 + div
@@ -490,12 +510,12 @@ aside li i
 #activities a
 {
     background: white;
-    border-radius: 20rem;
-    box-shadow: 0 0 20rem #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #D9D9D9;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #activities div > div
@@ -507,113 +527,113 @@ aside li i
 
 #activities strong
 {
-    font-size: 17rem;
-    margin: 19rem 20rem 0 20rem;
+    font-size: 17px;
+    margin: 19px 20px 0 20px;
 }
 
 #Vieux_Port, #Parc_National
 {
-    height: 446rem;
+    height: 446px;
 }
 #Vieux_Port div, #Parc_National div
 {
-    height: 390rem;
+    height: 390px;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #Vieux_Port img
 {
-    width: 670rem;
+    width: 670px;
     height: auto;
     position: relative;
-    right: 186rem;
+    right: 186px;
 }
 
 #Parc_National img
 {
-    width: 660rem;
+    width: 660px;
     height: auto;
     position: relative;
-    right: 180rem;
+    right: 180px;
 }
 
 #Fort_de_Pomègues
 {
-    height: 236rem;
+    height: 236px;
 }
 
 #Fort_de_Pomègues div
 {
-    height: 180rem;
+    height: 180px;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #Fort_de_Pomègues img
 {
-    width: 302rem;
+    width: 302px;
     height: auto;
     position: relative;
-    bottom: 110rem;
+    bottom: 110px;
 }
 
 #Îles_du_Frioul
 {
-    height: 166rem;
+    height: 166px;
 }
 
 #Îles_du_Frioul div
 {
-    height: 110rem;
+    height: 110px;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #Îles_du_Frioul img
 {
     height: auto;
-    width: 302rem;
+    width: 302px;
     position: relative;
-    bottom: 18rem;
+    bottom: 18px;
 }
 
 #Notre_Dame
 {
-    height: 196rem;
+    height: 196px;
 }
 
 #Notre_Dame div
 {
-    height: 140rem;
+    height: 140px;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #Notre_Dame img
 {
     height: auto;
-    width: 302rem;
+    width: 302px;
 }
 
 #Parc_Longchamp
 {
-    height: 206rem;
+    height: 206px;
 }
 
 #Parc_Longchamp div
 {
-    height: 150rem;
+    height: 150px;
     overflow: hidden;
-    width: 302rem;
+    width: 302px;
 }
 
 #Parc_Longchamp img
 {
     height: auto;
-    width: 302rem;
+    width: 302px;
     position: relative;
-    bottom: 12rem;
+    bottom: 12px;
 }
 
 /*footer*/
@@ -622,27 +642,27 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    padding: 46rem 50rem 38rem 50rem;
+    padding: 46px 50px 38px 50px;
 }
 
 footer h3
 {
-    font-size: 18rem;
-    margin: 0 0 20rem 0;
+    font-size: 18px;
+    margin: 0 0 20px 0;
 }
 
 footer li
 {
-    font-size: 16rem;
-    margin: 0 0 12rem 0;
+    font-size: 16px;
+    margin: 0 0 12px 0;
 }
 
 footer section:nth-child(2)
 {
-    padding: 0 0 0 228rem;
+    padding: 0 0 0 228px;
 }
 
 footer section:nth-child(3)
 {
-    padding: 0 0 0 292rem;
+    padding: 0 0 0 292px;
 }
