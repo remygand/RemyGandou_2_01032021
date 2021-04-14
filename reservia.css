@@ -16,13 +16,12 @@ a {
     text-decoration: none;
 }
 
-p {
+h1, h2, h3, p, ul {
     margin: 0;
 }
 
 ul {
     list-style: none;
-    margin: 0;
     padding-inline-start: 0;
 }
 
@@ -38,40 +37,39 @@ header nav {
     }
 
     header nav :nth-child(1) {
-        padding: 24px 0 28px 5.6%;
+        padding: 1.5rem 0 1.75rem 5.6%;
     }
 
     header nav :nth-child(2) {
         order: 3;
-        padding-left: 10.4%;
-        text-align: left;
-        width: 39.6%;
+        padding: 0 9.6% 0.8125rem 10.4%;
+        width: 30%;
     }
 
     header nav :nth-child(3) {
         order: 4;
-        padding-right: 17.6%;
-        text-align: right;
-        width: 32.4%;
+        padding: 0 17.6% 0.8125rem 16%;
+        width: 16.4%;
     }
 
     header nav :nth-child(4) {
         margin-left: auto;
         order: 2;
-        padding: 40px 5.6% 0 0;
+        padding: 2.5rem 5.6% 0 0;
         text-align: right;
         width: 44.4%;
     }
 
     header a {
-        border-bottom: 3px #F2F2F2 solid;
-        padding-bottom: 13px;
+        display: flex;
+        border-bottom: 0.1875rem #F2F2F2 solid;
+        justify-content: center;
     }
 }
 
 @media only screen and (min-width: 768px) {
     header nav :nth-child(1){
-        padding: 44px 0 37px 3.681%;
+        padding: 2.75rem 0 2.3125rem 3.681%;
     }
     
     header nav :nth-child(2) {
@@ -79,13 +77,13 @@ header nav {
     }
 
     header nav :nth-child(4) {
-        padding: 48px 5.347% 0 3.194%;
+        padding: 3rem 5.347% 0 3.194%;
     }
 
     header a {
-        border-top: 2px white solid;
+        border-top: 0.125rem white solid;
         margin-left: 1.181%;
-        padding: 46px 1.528% 0 1.944%;
+        padding: 2.875rem 1.528% 0 1.944%;
     }
 }
 
@@ -103,8 +101,8 @@ header a:hover, header strong {
 
 main a {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #D9D9D9;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1.25rem #D9D9D9;
     color: black;
     display: flex;
     overflow: hidden;
@@ -113,139 +111,226 @@ main a {
 
 /* research */
 
-#research
-{
-    padding: 0 53px 38px 53px;
+@media only screen and (max-width: 767px) {
+    #research {
+        padding: 1.9375rem 5.6% 2.25rem 5.6%;
+    }
+
+    #research h1 {
+        margin-bottom: 0.8125rem;
+    }
+
+    #research h1 + p {
+        margin-bottom: 2.1875rem;
+    }
+
+    #research p + div {
+        margin-bottom: 2.0625rem;
+    }
+
+    form {
+        flex: 1;
+    }
+
+    input {
+        display: flex;
+        padding: 0.875rem 1.8125rem 0.875rem 0.875rem;
+        width: calc(100% - 1.8125rem);
+    }
+
+    #research div form + strong {
+        display: none;
+    }
+
+    i[class="fas fa-search"] {
+        align-items: center;
+        background-color: #0065FC;
+        border : 0.0625rem #0065FC solid;
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        font-size: 1.125rem;
+        height: 1.3125rem;
+        justify-content: center;
+        padding: 0.875rem;
+        min-width: 1.3125rem;
+    }
+
+    #research > :nth-child(4) {
+        margin-bottom: 1.125rem;
+    }
+
+    #research h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.9375rem;
+        width: 100%;
+    }
+
+    #filters {
+        margin-left: 0;
+        position: relative;
+        right: 0.875rem;
+    }
+
+    .filter {
+        margin-left: 2.375rem;
+        margin-bottom: 0.8125rem; 
+    }
+
+    .filter strong {
+        font-size: 0.9375rem;
+        padding: 0.875rem 1.25rem 0.875rem 2rem;   
+    }
 }
 
-#research h1
-{
-    font-size: 22px;
-    margin: 0 0 8px 1px;
+@media only screen and (min-width: 768px) {
+    #research {
+        padding: 0 5.347% 2.4375rem 3.681%;
+    }
+
+    #research h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    #research h1 + p {
+        margin-bottom: 1.1875rem;
+    }
+
+    #research p + div {
+        margin-bottom: 1.9375rem;
+    }
+
+    input {
+        padding: 0.875rem;
+    }
+
+    #research div form + strong {
+        background-color: #0065FC;
+        border : 0.0625rem #0065FC solid;
+        border-radius: 0 0.875rem 0.875rem 0;
+        color: white;
+        font-size: 1.125rem;
+        padding: 0.875rem;
+    }
+
+    i[class="fas fa-search"] {
+        display: none;
+    }
+
+    #research > :nth-child(4) {
+        display: flex;
+        margin-bottom: 0.6875rem;
+    }
+
+    #research h3 {
+        font-size: 1.125rem;
+        padding: 0.9375rem 0 0 0.625%;
+    }
+
+    #filters {
+        margin-left: 0.5rem;
+    }
+
+    .filter {
+        margin-left: 3.0625rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    .filter strong {
+        font-size: 1.125rem;
+        padding: 0.8125rem 1.25rem 0.75rem 2rem;   
+    }
+
+    #research > :nth-child(5) > i {
+        margin-left: 0.417%;
+    }
 }
 
-#research h1 + p
-{
-    font-size: 16px;
-    margin: 0 0 19px 2px;
+#research h1 {
+    font-size: 1.375rem;
 }
 
-#research p + div
-{
+#research p + div {
     display: flex;
-    margin-bottom: 31px;
 }
 
-i[class="fas fa-map-marker-alt"]
-{
+i[class="fas fa-map-marker-alt"] {
     align-items: center;
     background-color: #F2F2F2;
-    border: 1px #F2F2F2 solid;
-    border-radius: 14px 0 0 14px;
+    border : 1px #F2F2F2 solid;
+    border-radius: 16px 0 0 16px;
     display: flex;
-    font-size: 18px;
-    height: 21px;
+    font-size: 1.125rem;
+    height: 1.3125rem;
     justify-content: center;
     padding: 14px;
-    width: 21px;
+    min-width: 1.3125rem;
 }
 
-input
-{
+input {
     border : 1px #F2F2F2 solid; 
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    padding: 14px;
 }
 
-#research div form + strong
-{
-    background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 0 14px 14px 0;
-    color: white;
-    font-size: 18px;
-    padding: 14px;
-}
-
-#filters
-{
+#filters {
     display: flex;
     flex-wrap: wrap;
-    font-size: 18px;
-    justify-content: space-between;
-    margin: 0 0 37px 9px;
-    padding-left: 0;
-    width: 940px;
 }
 
-#filters li:first-child
-{
-    border: 2px white solid;
-    border-left: none;
-    margin: 12px 20px 12px 0px;
+.filter { 
+    display: flex;
 }
 
-#filters li:nth-child(5)
-{
+.filter i {
+    align-items: center;
+    background-color: #DEEBFF;
+    border : 0.125rem #DEEBFF solid;
+    border-radius: 3.125rem;
+    color: #0065FC;
+    display: flex;
+    font-size: 1.1875rem;
+    height: 1.375rem;
+    justify-content: center;
+    left: 0.4375rem;
+    padding: 0.75rem;
+    position: relative;
+    min-width: 1.375rem;
+}
+
+.filter strong {
+    border: 0.125rem #D9D9D9 solid;
+    border-radius: 0 3.125rem 3.125rem 0;
+}
+
+.filter strong:hover {
+    color: #0065FC;
+}
+
+.filter:nth-child(4) {
     width: max-content;
 }
 
-.filter
-{
+#research > :nth-child(5) {
     display: flex;
 }
 
-.filter i
-{
+#research > :nth-child(5) > i {
     align-items: center;
-    background-color: #DEEBFF;
-    border: 2px #DEEBFF solid;
-    border-radius: 50px;
+    border: 0.0625rem #D9D9D9 solid;
+    border-radius: 6.25rem;
     color: #0065FC;
     display: flex;
-    font-size: 18px;
-    height: 21px;
+    font-size: 0.75rem;
+    height: 0.625rem;
     justify-content: center;
-    left: 8px;
-    padding: 12px;
-    position: relative;
-    width: 21px;
+    padding: 0.375rem;
+    min-width: 0.625rem;
 }
 
-.filter strong
-{
-    border: 2px #D9D9D9 solid;
-    border-radius: 0 50px 50px 0;
-    padding: 12px 20px 12px 32px;
-}
-
-.filter strong:hover
-{
-    color: #0065FC;
-}
-
-#research :nth-child(5)
-{
-    align-items: center;
-    display: flex;
-    font-size: 16px;
-}
-
-i[class="fas fa-info"]
-{
-    align-items: center;
-    border: 1px #D9D9D9 solid;
-    border-radius: 50px;
-    color: #0065FC;
-    display: flex;
-    font-size: 12px;
-    height: 10px;
-    justify-content: center;
-    margin: 0 10px 0 5px;
-    padding: 5px;
-    width: 10px;
+#research > :nth-child(5) > p {
+    margin: 0.1875rem 0 0 0.6875rem;
 }
 
 /*hostings*/
