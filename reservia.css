@@ -20,6 +20,14 @@ h1, h2, h3, p, ul {
     margin: 0;
 }
 
+h1, h2 {
+    font-size: 1.375rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
 ul {
     list-style: none;
     padding-inline-start: 0;
@@ -103,10 +111,8 @@ main a {
     background: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 1.25rem #D9D9D9;
-    color: black;
     display: flex;
     overflow: hidden;
-    text-decoration: none;
 }
 
 /* research */
@@ -173,8 +179,7 @@ main a {
     }
 
     .filter {
-        margin-left: 2.375rem;
-        margin-bottom: 0.8125rem; 
+        margin: 0 0 0.8125rem 2.375rem;
     }
 
     .filter strong {
@@ -185,15 +190,15 @@ main a {
 
 @media only screen and (min-width: 768px) {
     #research {
-        padding: 0 5.347% 2.4375rem 3.681%;
+        padding: 0 5.347% 2.3125rem 3.75%;
     }
 
     #research h1 {
-        margin-bottom: 0.5rem;
+        margin: 0 0 0.5rem 0.0625rem;
     }
 
     #research h1 + p {
-        margin-bottom: 1.1875rem;
+        margin: 0 0 1.1875rem 0.0625rem;
     }
 
     #research p + div {
@@ -224,7 +229,7 @@ main a {
 
     #research h3 {
         font-size: 1.125rem;
-        padding: 0.9375rem 0 0 0.625%;
+        padding: 0.9375rem 0 0 0.5625rem;
     }
 
     #filters {
@@ -232,8 +237,7 @@ main a {
     }
 
     .filter {
-        margin-left: 3.0625rem;
-        margin-bottom: 1.5rem; 
+        margin: 0 0 1.5rem 3.0625rem;
     }
 
     .filter strong {
@@ -241,13 +245,28 @@ main a {
         padding: 0.8125rem 1.25rem 0.75rem 2rem;   
     }
 
-    #research > :nth-child(5) > i {
-        margin-left: 0.417%;
+    #research > :nth-child(5) {
+        margin-left: 0.3125rem;
     }
 }
 
-#research h1 {
-    font-size: 1.375rem;
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    
+
+    #filters {
+        margin-left: 0;
+        position: relative;
+        right: 0.875rem;
+    }
+
+    .filter {
+        margin: 0 0 0.8125rem 2.375rem;
+    }
+
+    .filter strong {
+        font-size: 0.9375rem;
+        padding: 0.875rem 1.25rem 0.875rem 2rem;   
+    }
 }
 
 #research p + div {
@@ -257,18 +276,18 @@ main a {
 i[class="fas fa-map-marker-alt"] {
     align-items: center;
     background-color: #F2F2F2;
-    border : 1px #F2F2F2 solid;
-    border-radius: 16px 0 0 16px;
+    border : 0.0625rem #F2F2F2 solid;
+    border-radius: 1rem 0 0 1rem;
     display: flex;
     font-size: 1.125rem;
     height: 1.3125rem;
     justify-content: center;
-    padding: 14px;
+    padding: 0.875rem;
     min-width: 1.3125rem;
 }
 
 input {
-    border : 1px #F2F2F2 solid; 
+    border : 0.0625rem #F2F2F2 solid; 
     font-family: 'Raleway', sans-serif;
     font-size: 1.125rem;
     font-weight: bold;
@@ -318,7 +337,7 @@ input {
 
 #research > :nth-child(5) > i {
     align-items: center;
-    border: 0.0625rem #D9D9D9 solid;
+    border : 0.0625rem #D9D9D9 solid;
     border-radius: 6.25rem;
     color: #0065FC;
     display: flex;
@@ -333,71 +352,332 @@ input {
     margin: 0.1875rem 0 0 0.6875rem;
 }
 
-/*hostings*/
+/* hostings */
 
-#hostings
-{
-    align-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 50px 60px 50px;
+@media only screen and (max-width: 767px) {
+    #hostings {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hostings section {
+        order: 2;
+        padding: 2.25rem 5.6% 3.3125rem 5.6%;
+    }
+
+    #hostings section h2 {
+        margin-bottom: 1.1875rem;
+    }
+
+    #hostings section > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        height: 78.375rem;
+        justify-content: space-between;
+        margin-bottom: 1.9375rem;
+    }
+
+    #hostings section a div {
+        display: flex;
+        margin-bottom: 0.5625rem;
+        max-height: 7.125rem;
+    }
+
+    #hostings section h3 {
+        margin-bottom: 0.3125rem;
+    }
+
+    #hostings section p {
+        margin-bottom: 0.25rem;
+    }
+
+    aside {
+        flex: 1;
+        order: 1;
+        padding: 2.375rem 5.6% 2.3125rem 5.6%;
+    }
+
+    aside > :nth-child(1) {
+        margin-bottom: 1.675rem;
+    }
+
+    aside > :nth-child(2) {
+        height: 28.3125rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    aside a {
+        border: 0.3125rem white solid;
+        height: 8.375rem;
+    }
+    
+    aside a > :nth-child(1) {
+        width: 7.9375rem;
+        height: 8.375rem;
+        overflow: hidden;
+    }
+    
+    aside a > :nth-child(2){
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-top: 0.6875rem;
+    }
+    
+    img[alt="Hôtel Le soleil du matin"]
+    {
+        bottom: 0.375rem;
+        height: auto;
+        position: relative;
+        right: 2.75rem;
+        width: 13.5rem;
+    }
+    
+    img[alt*="Au coeur de l'eau"]
+    {
+        bottom: 0.25rem;
+        height: auto;
+        position: relative;
+        right: 2.0625rem;
+        width: 11.75rem;
+    }
+    
+    img[alt="Hôtel Tout bleu et Blanc"]
+    {
+        bottom: 2.25rem;
+        height: auto;
+        position: relative;
+        right: 0.375rem;
+        width: 8.625rem;
+    }
+
+    aside h3, aside p {
+        margin: 0 0.9375rem 0.4375rem 1.25rem;
+    }
+    
+    aside p {
+        font-size: 0.875rem;
+    }
+    
+    aside ul {
+        display: flex;
+        margin: auto 0.9375rem 0.375rem 1.25rem;
+    }
+    
+    aside li i {
+        color: #0065FC;
+        font-size: 0.6875rem;
+    }
 }
 
-#hostings section
-{
-    background: #F2F2F2;
-    border-radius: 20px;
-    display: flex;
+@media only screen and (min-width: 768px) {
+    #hostings {
+        display: flex;
+        padding: 0 3.472% 3.75rem 3.472%; 
+    }
+
+    #hostings section {
+        border-radius: 1.25rem;
+        background: #F2F2F2;
+        padding: 2.625rem 2.78% 2.875rem 2.78%;
+    }
+
+    #hostings section h2 {
+        margin-bottom: 1.4375rem;
+    }
+
+    #hostings section > :nth-child(2) {
+        align-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 26.75rem;
+        margin-bottom: 2.5rem;
+    }
+
+    #hostings section a {
+        width: 29.5%;
+    }
+
+    #hostings section a div {
+        max-height: 7.125rem;
+        margin-bottom: 0.5625rem;
+        overflow: hidden;
+    }
+
+    #hostings section h3 {
+        margin-bottom: 0.3125rem;
+    }
+
+    #hostings section p {
+        margin-bottom: 0.25rem;
+    }
+
+    #hostings section > :nth-child(3) {
+        margin-left: 0.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    #hostings {
+        flex-direction: column;
+    }
+
+    #hostings section {
+        order: 2;
+    }
+
+    aside {
+        order: 1;
+        border-radius: 1.25rem;
+        background: #F2F2F2;
+        margin-bottom: 2.5rem;
+        padding: 2.625rem 2.78% 2.875rem 2.78%;
+    }
+
+    aside > :nth-child(1) {
+        margin-bottom: 1.4375rem;
+    }
+
+    aside > :nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    aside a {
+        display: flex;
+        flex-direction: column;
+        width: 29.5%;
+        border: 0.3125rem white solid;
+    }
+
+    aside a > :nth-child(1) {
+        height: 7.125rem;
+        overflow: hidden;
+    }
+
+    aside a > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        height: 81px;
+        padding: 9px 11px 4px 0;
+    }
+
+    aside h3 {
+        margin-bottom: 0.3125rem;
+    }
+
+    aside p {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    aside ul {
+        margin-top: auto;
+        display: flex;
+    }
+    
+    aside li i {
+        color: #0065FC;
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #hostings section {
+        width: 65.672%;
+    }
+
+    aside {
+        padding: 2.375rem 5.6% 2.3125rem 5.6%;
+    }
+
+    aside > :nth-child(1) {
+        margin-bottom: 1.675rem;
+    }
+
+    aside > :nth-child(2) {
+        height: 28.3125rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    aside a {
+        border: 0.3125rem white solid;
+        height: 8.375rem;
+    }
+    
+    aside a > :nth-child(1) {
+        width: 7.9375rem;
+        height: 8.375rem;
+        overflow: hidden;
+    }
+    
+    aside a > :nth-child(2){
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-top: 0.6875rem;
+    }
+    
+    img[alt="Hôtel Le soleil du matin"]
+    {
+        bottom: 0.375rem;
+        height: auto;
+        position: relative;
+        right: 2.75rem;
+        width: 13.5rem;
+    }
+    
+    img[alt*="Au coeur de l'eau"]
+    {
+        bottom: 0.25rem;
+        height: auto;
+        position: relative;
+        right: 2.0625rem;
+        width: 11.75rem;
+    }
+    
+    img[alt="Hôtel Tout bleu et Blanc"]
+    {
+        bottom: 2.25rem;
+        height: auto;
+        position: relative;
+        right: 0.375rem;
+        width: 8.625rem;
+    }
+
+    aside h3, aside p {
+        margin: 0 0.9375rem 0.4375rem 1.25rem;
+    }
+    
+    aside p {
+        font-size: 0.875rem;
+    }
+    
+    aside ul {
+        display: flex;
+        margin: auto 0.9375rem 0.375rem 1.25rem;
+    }
+    
+    aside li i {
+        color: #0065FC;
+        font-size: 0.6875rem;
+    }
+}
+
+#hostings section a {
+    border: 0.3125rem white solid;
     flex-direction: column;
-    height: max-content;
-    padding: 42px 40px 46px 40px;
+    height: 11.8125rem;
 }
 
-#hostings section h2
-{
-    font-size: 22px;
-    margin: 0 0 23px 0;
-}
-
-#hostings section h2 + div
-{
-    align-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    height: 428px;
-    justify-content: space-between;
-    margin: 0 0 40px 0;
-    width: 795px;
-}
-
-#hostings section a
-{
-    border: 5px white solid;
-    flex-direction: column;
-    height: 189px;
-    width: 235px;
-}
-
-#hostings section a div
-{
-    height: 114px;
-    margin-bottom: 9px;
-    overflow: hidden;
-    width: 235px;
-}
-
-#hostings section img
-{
-    height: auto;
-    width: 244px;
-    position: relative;
-    right: 4px;
-}
-
-img[alt="Auberge la Cannebière"], img[alt="Hôtel Les mouettes"]
-{
-    bottom: 24px;
+#hostings section img {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 img[alt="Hôtel du port"]
@@ -420,334 +700,219 @@ img[alt="Hôtel chez Amina"]
     bottom: 126px;
 }
 
-#hostings section h3
-{
-    font-size: 16px;
-    margin: 0 0 5px 11px;
+#hostings h3, #hostings p, #hostings ul {
+    margin-left: 0.6875rem;
+} 
+
+#hostings section p {
+    font-size: 0.875rem;
 }
 
-#hostings section p
-{
-    font-size: 14px;
-    margin: 0 0 8px 11px;
-}
-
-#hostings section ul
-{
+#hostings section ul {
     display: flex;
-    margin: 0 0 6px 11px;
 }
 
-#hostings section i
-{
+#hostings section i {
     color: #0065FC;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
-#hostings .grey i
-{
+#hostings .grey i {
     color: #D9D9D9;
 }
 
-#hostings section div + strong
-{
-    font-size: 18px;
+#hostings section > :nth-child(3) {
+    font-size: 1.125rem;
 }
 
-/*aside*/
-
-aside
-{
+aside {
     background: #F2F2F2;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 41px 37px 34px 37px;
 }
 
-aside > div
-{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 26px;
-}
-
-aside h2
-{
-    font-size: 22px;
-    margin: 0;
-}
-
-aside h2 + i
-{
-    font-size: 22px;
-    position: relative;
-    top: 2px;
-}
-
-aside > div + div
-{
-    display: flex;
-    flex-direction: column;
-    height: 498px;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-aside a
-{
-    background: white;
-    border: 5px white solid;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #D9D9D9;
-    display: flex;
-    height: 134px;
-    overflow: hidden;
-    width: 333px;
-}
-
-aside a > div
-{
-    width: 127px;
-    height: 134px;
-    overflow: hidden;
-}
-
-aside a > div + div
-{
-    display: flex;
-    flex-direction: column;
-    width: 206px;
-    height: 134px;
-}
-
-img[alt="Hôtel Le soleil du matin"]
-{
-    bottom: 6px;
-    height: auto;
-    position: relative;
-    right: 44px;
-    width: 216px;
-}
-
-img[alt*="Au coeur de l'eau"]
-{
-    bottom: 4px;
-    height: auto;
-    position: relative;
-    right: 33px;
-    width: 188px;
-}
-
-
-img[alt="Hôtel Tout bleu et Blanc"]
-{
-    bottom: 36px;
-    height: auto;
-    position: relative;
-    right: 6px;
-    width: 138px;
-}
-
-aside h3
-{
-    font-size: 16px;
-    margin: 11px 10px 7px 20px;
-}
-
-aside p
-{
-    font-size: 14px;
-    margin: 0 10px 41px 20px;
-}
-
-aside ul
-{
-    display: flex;
-    margin: 0 10px 2px 20px;
-}
-
-aside li i
-{
-    color: #0065FC;
-    font-size: 11px;
-}
-
-/*activities*/
-
-#activities
-{
-    padding: 0 50px 60px 50px;
-}
-
-#activities h2
-{
-    font-size: 22px;
-    margin: 0 0 22px 0;
-}
-
-#activities h2 + div
-{
+aside > :nth-child(1) {
     display: flex;
     justify-content: space-between;
 }
 
-#activities a
-{
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #D9D9D9;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    width: 302px;
-}
-
-#activities div > div
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#activities strong
-{
-    font-size: 17px;
-    margin: 19px 20px 0 20px;
-}
-
-#Vieux_Port, #Parc_National
-{
-    height: 446px;
-}
-#Vieux_Port div, #Parc_National div
-{
-    height: 390px;
-    overflow: hidden;
-    width: 302px;
-}
-
-#Vieux_Port img
-{
-    width: 670px;
-    height: auto;
+aside > :nth-child(1) i {
+    font-size: 1.375rem;
     position: relative;
-    right: 186px;
+    top: 0.125rem;
 }
 
-#Parc_National img
-{
-    width: 660px;
-    height: auto;
-    position: relative;
-    right: 180px;
+/* activities */
+
+@media only screen and (max-width: 767px) {
+    #activities {
+        padding: 0 5.6% 25px 5.6%;
+    }
+
+    #activities h2 {
+        margin-bottom: 1.75rem;
+    }
+
+    #activities > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activities a {
+        flex-direction: column;
+        height: 11.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #activities a div {
+        height: 8.375rem;
+    }
 }
 
-#Fort_de_Pomègues
-{
-    height: 236px;
+@media only screen and (min-width: 768px) {
+    #activities {
+        padding: 0 3.472% 60px;
+    }
+
+    #activities h2 {
+        margin-bottom: 23px;
+    }
+
+    #activities > :nth-child(2) {
+        align-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 933px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2n) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2n) a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activities > :nth-child(2) > :nth-child(n) {
+        flex-direction: column;
+        height: 445px;
+        width: 48.396%;
+    }
+
+    #activities > :nth-child(2) > :nth-child(3) {
+        order: 4;
+    }
+
+    #activities > :nth-child(2) > :nth-child(4) {
+        order: 3;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2) > :nth-child(1) {
+        height: 236px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2) > :nth-child(2) {
+        height: 166px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(4) > :nth-child(1) {
+        height: 196px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(4) > :nth-child(2) {
+        height: 209px;
+    }
+
+    #activities a div {
+        height: 390px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2) > :nth-child(1) div {
+        height: 181px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(2) > :nth-child(2) div {
+        height: 110px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(4) > :nth-child(1) div {
+        height: 140px;
+    }
+
+    #activities > :nth-child(2) > :nth-child(4) > :nth-child(2) div {
+        height: 153px;
+    }
 }
 
-#Fort_de_Pomègues div
-{
-    height: 180px;
+@media only screen and (min-width: 1440px) {
+    #activities > :nth-child(2) > :nth-child(n) {
+        width: 22.5373%;
+    }
+}
+
+#activities a div {
+    margin-bottom: 1.25rem;
     overflow: hidden;
-    width: 302px;
 }
 
-#Fort_de_Pomègues img
-{
-    width: 302px;
-    height: auto;
-    position: relative;
-    bottom: 110px;
-}
-
-#Îles_du_Frioul
-{
-    height: 166px;
-}
-
-#Îles_du_Frioul div
-{
-    height: 110px;
-    overflow: hidden;
-    width: 302px;
-}
-
-#Îles_du_Frioul img
-{
-    height: auto;
-    width: 302px;
-    position: relative;
-    bottom: 18px;
-}
-
-#Notre_Dame
-{
-    height: 196px;
-}
-
-#Notre_Dame div
-{
-    height: 140px;
-    overflow: hidden;
-    width: 302px;
-}
-
-#Notre_Dame img
-{
-    height: auto;
-    width: 302px;
-}
-
-#Parc_Longchamp
-{
-    height: 206px;
-}
-
-#Parc_Longchamp div
-{
-    height: 150px;
-    overflow: hidden;
-    width: 302px;
-}
-
-#Parc_Longchamp img
-{
-    height: auto;
-    width: 302px;
-    position: relative;
-    bottom: 12px;
+#activities a h3 {
+    margin-left: 1.25rem;
 }
 
 /*footer*/
 
-footer
-{
+footer {
     background-color: #F2F2F2;
     display: flex;
-    padding: 46px 50px 38px 50px;
 }
 
-footer h3
-{
-    font-size: 18px;
-    margin: 0 0 20px 0;
+@media only screen and (max-width: 767px) {
+    footer {
+        flex-direction: column; 
+        padding: 2.8125rem 5.6% 2.125rem;
+    }
+
+    footer > :nth-child(1) {
+        margin-bottom: 1.75rem;
+    }
+
+    footer > :nth-child(2) {
+        margin-bottom: 2.4375rem;
+    }
 }
 
-footer li
-{
-    font-size: 16px;
-    margin: 0 0 12px 0;
+@media only screen and (min-width: 768px) {
+    footer {
+        padding: 45px 3.472% 53px;
+    }
+
+    footer > :nth-child(1) {
+        margin-right: 10%;
+    }
+
+    footer > :nth-child(2) {
+        margin-right: 14%;
+    }
 }
 
-footer section:nth-child(2)
-{
-    padding: 0 0 0 228px;
+@media only screen and (min-width: 1440px) {
+    footer > :nth-child(1) {
+        margin-right: 16.94%;
+    }
+
+    footer > :nth-child(2) {
+        margin-right: 21.79%;
+    }
 }
 
-footer section:nth-child(3)
-{
-    padding: 0 0 0 292px;
+footer h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+
+footer li {
+    margin-bottom: 0.75rem;
 }
