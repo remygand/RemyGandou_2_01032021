@@ -11,6 +11,13 @@ body {
     width: 100%;
 }
 
+@media only screen and (min-width: 2000px) {
+    #main_wrapper {
+        width: 2000px;
+        margin: auto;
+    }
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -30,7 +37,7 @@ h3 {
 
 ul {
     list-style: none;
-    padding-inline-start: 0;
+    padding-left: 0;
 }
 
 /* header */
@@ -489,7 +496,15 @@ input {
     }
 
     img[alt="Auberge la Cannebière"] {
-        object-position: 0 1.5rem;
+        object-position: center 1.5rem;
+    }
+
+    img[alt="Hôtel de la mer"] {
+        object-position: center 2.875rem;
+    }
+
+    img[alt="Hôtel chez Amina"] {
+        object-position: center 7.625rem;
     }
 
     #hostings section h3 {
@@ -677,7 +692,7 @@ input {
     }
     
     img[alt="Hôtel Tout bleu et Blanc"] {
-        object-position: -0.25rem -2.1875;
+        object-position: -0.25rem -2.1875rem;
         height: 8.625rem;
         width: 8.5rem;
         object-fit: cover;
