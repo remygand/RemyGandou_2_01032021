@@ -362,13 +362,7 @@ input {
         margin-bottom: 1.9375rem;
     }
 
-    #hostings section a div {
-        display: flex;
-        margin-bottom: 0.5625rem;
-        max-height: 7.125rem;
-    }
-
-    #hostings section a picture{
+    #hostings section a div, #hostings section a picture {
         display: flex;
         margin-bottom: 0.5625rem;
         max-height: 7.125rem;
@@ -419,22 +413,22 @@ input {
     
     img[alt="Hôtel Le soleil du matin"] {
         object-fit: cover;
-        object-position: center -4px;
+        object-position: center -0.25rem;
         height: 8.625rem;
         width: 7.9375rem;
     }
     
     img[alt*="Au coeur de l'eau"] {
-        object-position: -30px -4px;
-        height: 140px;
-        width: 140px;
+        object-position: -1.875rem -0.25rem;
+        height: 8.75rem;
+        width: 8.75rem;
         object-fit: cover;
     }
     
     img[alt="Hôtel Tout bleu et Blanc"] {
-        object-position: -4px -35px;
+        object-position: -0.25rem -2.1875rem;
         height: 8.625rem;
-        width: 136px;
+        width: 8.5rem;
         object-fit: cover;
     }
 
@@ -487,29 +481,15 @@ input {
     }
 
     #hostings section a div, #hostings section a picture{
+        display: flex;
         max-height: 7.125rem;
         margin-bottom: 0.5625rem;
         overflow: hidden;
+        align-items: flex-end;
     }
 
     img[alt="Auberge la Cannebière"] {
-        object-position: center -22px;
-    }
-
-    img[alt="Hôtel du port"] {
-        object-position: center -24px;
-    }
-
-    img[alt="Hôtel Les mouettes"] {
-        object-position: center -24px;
-    }
-
-    img[alt="Hôtel de la mer"] {
-        object-position: center -58px;
-    }
-
-    img[alt="Hôtel chez Amina"] {
-        object-position: center -84px;
+        object-position: 0 1.5rem;
     }
 
     #hostings section h3 {
@@ -525,21 +505,21 @@ input {
     }
 
     img[alt="Vieux Port"] {
-        object-position: center -26px;
-        height: 445px;
+        object-position: center -1.625rem;
+        height: 27.8125rem;
     }
 
     img[alt="Fort de Pomègues"] {
-        object-position: center -110px;
+        object-position: center -6.875rem;
     }
 
     img[alt="Îles du Frioul"] {
-        object-position: center -18px;
+        object-position: center -1.125rem;
     }
 
     img[alt="Parc National des Calanques"] {
-        object-position: center -12px;
-        height: 445px;
+        object-position: center -0.75rem;
+        height: 27.8125rem;
     }
 
     img[alt="Notre-Dame-de-la-Garde"] {
@@ -547,7 +527,7 @@ input {
     }
 
     img[alt="Parc Longchamp"] {
-        object-position: center -16px;
+        object-position: center -1rem;
     }
 }
 
@@ -591,18 +571,18 @@ input {
 
     img[alt="Hôtel Le soleil du matin"] {
         object-fit: cover;
-        object-position: center -24px;
+        object-position: center -1.5rem;
         max-width: 100%;
     }
     
     img[alt*="Au coeur de l'eau"] {
-        object-position: center -18px;
+        object-position: center -1.125rem;
         max-width: 100%;
         object-fit: cover;
     }
     
     img[alt="Hôtel Tout bleu et Blanc"] {
-        object-position: center -140px;
+        object-position: center -8.75rem;
         max-width: 100%;
         object-fit: cover;
     }
@@ -610,8 +590,8 @@ input {
     aside a > :nth-child(2) {
         display: flex;
         flex-direction: column;
-        height: 81px;
-        padding: 9px 11px 4px 0;
+        height: 5.0626rem;
+        padding: 0.5625rem 0.6875rem 0.25rem 0;
     }
 
     #hostings h3, #hostings p, #hostings ul {
@@ -658,7 +638,7 @@ input {
     }
 
     aside > :nth-child(2) {
-        height: 498px;
+        height: 31.125rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -684,22 +664,22 @@ input {
     
     img[alt="Hôtel Le soleil du matin"] {
         object-fit: cover;
-        object-position: center -4px;
+        object-position: center -0.25rem;
         height: 8.625rem;
         width: 7.9375rem;
     }
     
     img[alt*="Au coeur de l'eau"] {
-        object-position: -30px -4px;
-        height: 140px;
-        width: 140px;
+        object-position: -1.875rem -0.25rem;
+        height: 8.75rem;
+        width: 8.75rem;
         object-fit: cover;
     }
     
     img[alt="Hôtel Tout bleu et Blanc"] {
-        object-position: -4px -35px;
+        object-position: -0.25rem -2.1875;
         height: 8.625rem;
-        width: 136px;
+        width: 8.5rem;
         object-fit: cover;
     }
 
@@ -732,6 +712,7 @@ input {
     max-width: 100%;
     object-fit: cover;
 }
+
 
 #hostings section h3, #hostings section p, #hostings section ul {
     margin-left: 0.6875rem;
@@ -779,7 +760,7 @@ aside > :nth-child(1) i {
 
 @media only screen and (max-width: 767px) {
     #activities {
-        padding: 0 5.6% 25px 5.6%;
+        padding: 0 5.6% 1.5625rem 5.6%;
     }
 
     #activities h2 {
@@ -829,11 +810,11 @@ aside > :nth-child(1) i {
 
 @media only screen and (min-width: 768px) {
     #activities {
-        padding: 0 3.472% 60px;
+        padding: 0 3.472% 3.875rem;
     }
 
     #activities h2 {
-        margin-bottom: 23px;
+        margin-bottom: 1.4375rem;
     }
 
     #activities > :nth-child(2) {
@@ -841,7 +822,7 @@ aside > :nth-child(1) i {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 933px;
+        height: 58.3125rem;
     }
 
     #activities > :nth-child(2) > :nth-child(2n) {
@@ -856,7 +837,7 @@ aside > :nth-child(1) i {
 
     #activities > :nth-child(2) > :nth-child(n) {
         flex-direction: column;
-        height: 445px;
+        height: 27.8125rem;
         width: 47.596%;
     }
 
@@ -869,45 +850,45 @@ aside > :nth-child(1) i {
     }
 
     #activities > :nth-child(2) > :nth-child(2) > :nth-child(1) {
-        height: 236px;
+        height: 14.75rem;
     }
 
     #activities > :nth-child(2) > :nth-child(2) > :nth-child(2) {
-        height: 166px;
+        height: 10.375rem;
     }
 
     #activities > :nth-child(2) > :nth-child(4) > :nth-child(1) {
-        height: 196px;
+        height: 12.25rem;
     }
 
     #activities > :nth-child(2) > :nth-child(4) > :nth-child(2) {
-        height: 209px;
+        height: 13.8625rem;
     }
 
     #activities a div, #activities a picture{
-        height: 390px;
+        height: 24.375rem;
     }
 
     #activities > :nth-child(2) > :nth-child(2) > :nth-child(1) div {
-        height: 181px;
+        height: 11.3125rem;
     }
 
     #activities > :nth-child(2) > :nth-child(2) > :nth-child(2) picture {
-        height: 110px;
+        height: 6.875rem;
     }
 
     #activities > :nth-child(2) > :nth-child(4) > :nth-child(1) picture {
-        height: 140px;
+        height: 8.75rem;
     }
 
     #activities > :nth-child(2) > :nth-child(4) > :nth-child(2) picture {
-        height: 153px;
+        height: 9.5625rem;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     #activities > :nth-child(2) {
-        height: 445px;
+        height: 27.8125rem;
     }
 
     #activities > :nth-child(2) > :nth-child(n) {
@@ -961,7 +942,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     footer {
-        padding: 45px 3.472% 53px;
+        padding: 2.8125rem 3.472% 3.3125rem;
     }
 
     footer > :nth-child(1) {
