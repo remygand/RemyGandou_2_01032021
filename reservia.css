@@ -370,9 +370,9 @@ input {
     }
 
     #hostings section a div, #hostings section a picture {
-        display: flex;
         margin-bottom: 0.5625rem;
-        max-height: 7.125rem;
+        height: 7.125rem;
+        overflow: hidden;
     }
 
     #hostings section h3 {
@@ -498,6 +498,11 @@ input {
     img[alt="Auberge la Cannebière"] {
         object-position: center 1.5rem;
     }
+
+    /*
+    img[alt="Auberge la Cannebière"] {
+        padding-top: 100%;
+    }*/
 
     img[alt="Hôtel de la mer"] {
         object-position: center 2.875rem;
